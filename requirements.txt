@@ -2,6 +2,7 @@ fastapi
 uvicorn[standard]
 python-dotenv
 mysql-connector-python
+psycopg2-binary
 langchain
 langchain-openai
 openai>=1.6.1
