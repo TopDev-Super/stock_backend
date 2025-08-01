@@ -72,12 +72,7 @@ async def root():
         "message": "Stock AI Analysis System with Semantic Understanding",
         "version": "1.0.0",
         "status": "running",
-        "features": [
-            "Natural language querying",
-            "Semantic field understanding",
-            "Trend analysis",
-            "Stock data analysis"
-        ]
+        "features": "Natural language querying, Semantic field understanding, Trend analysis, Stock data analysis"
     }
 
 @app.get("/health", response_model=HealthCheckResponse)
