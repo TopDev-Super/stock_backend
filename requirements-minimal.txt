@@ -2,7 +2,7 @@ fastapi
 uvicorn[standard]
 python-dotenv
 mysql-connector-python
-openai
+openai>=1.6.1
 pydantic
 python-multipart
 sqlalchemy
