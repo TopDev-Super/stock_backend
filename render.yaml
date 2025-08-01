@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: stock-ai-backend
+    env: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: chmod +x start.sh && ./start.sh
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: APP_HOST
+        value: 0.0.0.0
+      - key: APP_PORT
+        value: 8000
+      - key: DEBUG
+        value: false
+      # Database configuration - you'll need to set these in Render dashboard
+      - key: DB_HOST
+        sync: false
+      - key: DB_PORT
+        value: 3306
+      - key: DB_USER
+        sync: false
+      - key: DB_PASSWORD
+        sync: false
+      - key: DB_NAME
+        sync: false
+      # OpenAI configuration - you'll need to set this in Render dashboard
+      - key: OPENAI_API_KEY
+        sync: false 
