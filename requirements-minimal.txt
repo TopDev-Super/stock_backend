@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+mysql-connector-python
+openai
+pydantic
+python-multipart
+sqlalchemy
+pymysql
+cryptography
+gunicorn 
